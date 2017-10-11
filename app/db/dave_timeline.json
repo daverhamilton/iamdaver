@@ -1,0 +1,73 @@
+{
+    "title": {
+        "media": {
+          "url": "https://www.iamdaver.ca/images/daveTimelinePics/dave_2017.jpg",
+          "caption": "the life and times of daver's career.",
+          "alt": "picture of dave hamilton in 2017"
+        },
+        "text": {
+          "headline": "dave hamilton: the evolution",
+          "text": "<p>follow the evolution of dave and his career in analytics / development</p>"
+        }
+    },
+    "events": [
+      {
+        "media": {
+          "url": "https://www.iamdaver.ca/images/daveTimelinePics/dave_2017.jpg",
+          "caption": "Full Stack Web Development",
+          "thumbnail": "https://www.iamdaver.ca/images/daveTimelinePics/dave_2017_tmb.jpg"
+        },
+        "start_date": {
+          "month": "9",
+          "year": "2016"
+        },
+        "end_date": {
+          "month": "4",
+          "year": "2017"
+        },
+        "text": {
+          "headline": "Full Stack Web Development",
+          "text": "<p>coursera.org</p>"
+        }
+      },
+      {
+        "media": {
+          "url": "https://www.iamdaver.ca/images/daveTimelinePics/dave_2017.jpg",
+          "caption": "Database Management Essentials",
+          "thumbnail": "https://www.iamdaver.ca/images/daveTimelinePics/dave_2017_tmb.jpg",
+          "alt": "picture of dave hamilton - 2017"
+        },
+        "start_date": {
+          "month": "9",
+          "year": "2016"
+        },
+        "end_date": {
+          "month": "10",
+          "year": "2016"
+        },
+        "text": {
+          "headline": "Database Management Essentials",
+          "text": "<p>coursera.org</p>"
+        }
+      },
+      {
+        "media": {
+          "url": "https://www.iamdaver.ca/images/daveTimelinePics/dave_2015.jpg",
+          "caption": "Database Management Essentials",
+          "thumbnail": "https://www.iamdaver.ca/images/daveTimelinePics/dave_2015_tmb.jpg"
+        },
+        "start_date": {
+          "month": "9",
+          "year": "2016"
+        },
+        "end_date": {
+          "month": "10",
+          "year": "2016"
+        },
+        "text": {
+          "headline": "Full Stack Web Development",
+          "text": "<p>coursera.org</p>"
+        }
+      }
+    ]
+}

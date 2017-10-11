@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en" ng-App="daverApp">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Custom Web Design in Toronto - daver web design &amp; development</title>
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> 
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- build:css styles/main.css -->
+  <link href="styles/mystyles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<!--timeline css: https://timeline.knightlab.com/docs/instantiate-a-timeline.html-->
+  <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+
+<!-- endbuild -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://www.iamdaver.ca/images/favicon/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.iamdaver.ca/images/favicon/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.iamdaver.ca/images/favicon/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.iamdaver.ca/images/favicon/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://www.iamdaver.ca/images/favicon/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://www.iamdaver.ca/images/favicon/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://www.iamdaver.ca/images/favicon/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://www.iamdaver.ca/images/favicon/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="https://www.iamdaver.ca/images/favicon/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="https://www.iamdaver.ca/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="https://www.iamdaver.ca/images/favicon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="https://www.iamdaver.ca/images/favicon/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="https://www.iamdaver.ca/images/favicon/favicon-128.png" sizes="128x128" />
+  <meta name="application-name" content="Custom Web Design in Toronto - daver web design &amp; development"/>
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="https://www.iamdaver.ca/images/favicon/mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="https://www.iamdaver.ca/images/favicon/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="https://www.iamdaver.ca/images/favicon/mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="https://www.iamdaver.ca/images/favicon/mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="https://www.iamdaver.ca/images/favicon/mstile-310x310.png" />
+  
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102168628-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</head>
+
+<body id="superduper">
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T7MQ3KG"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div id="headerPlaceholder"></div>
+  <div ng-controller="MainController">
+    <div class="container">
+      <nav class="navbar navbar-inverse navbar-fixed-top" id="mainHeader" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" id="btnCollapse" data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a du-smooth-scroll offset="110" duration="1000" href="#home">
+              <img src="images/daver_logo.png" id="logoImg" alt="daver web development and design logo"/>
+              <!--<h1 id="logo"><strong>daver <span style="color: #808000">web</span><span style="color: #804000">dev</span><span style="color: navy">&amp;</span><span style="color: #800080">design</span></strong></h1>-->
+            </a>
+          </div>
+          <div class="navbar-collapse collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav pull-right">
+              <li class="Home headerStyle hvr-underline-from-right-color1" id="test1">
+                <a href="#home" class="headerThing hvr-grow" du-smooth-scroll offset="110" duration="1000" id="color1">
+                  <span class="glyphicon glyphicon-home" aria-hidden="true"></span><br/>
+                  Home
+                </a>
+              </li>
+              <li class="Services headerStyle hvr-underline-from-right-color2">
+                <a href="#services" class="headerThing hvr-grow" du-smooth-scroll offset="110" duration="1000" id="color2">
+                  <span class="glyphicon glyphicon-cog" aria-hidden="true"></span><br/>
+                  Services
+                </a>
+              </li>
+              <li class="Portfolio headerStyle hvr-underline-from-right-color3">
+                <a href="#portfolio" class="headerThing hvr-grow" du-smooth-scroll offset="110" duration="1000" id="color3">
+                  <span class="glyphicon glyphicon-heart" aria-hidden="true"></span><br/>
+                  Portfolio
+                </a>
+              </li>
+              <li class="About headerStyle hvr-underline-from-right-color4">
+                <a href="#about" class="headerThing hvr-grow" du-smooth-scroll offset="110" duration="1000" id="color4">
+                  <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span><br/>
+                  About
+                </a>
+              </li>
+              <li class="Contact headerStyle hvr-underline-from-right-color1">
+                <a href="#contact" class="headerThing hvr-grow" du-smooth-scroll offset="110" duration="1000" id="color1">
+                  <span class="glyphicon glyphicon-phone" aria-hidden="true"></span><br/>
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <section class="slice visible" id="home" du-scroll-container ng-style={{homeExpansion}}>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 titleSection">
+            <span id="homeTitle">mission statement</span>
+          </div>
+          <div class="col-xs-12">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3" id="homePar">
+              <span class="emphGreen"><strong>dave's</strong></span> mission is to eliminate the ever-widening gap between <strong>small and medium business brick and mortar stores</strong> and the challenges of providing an <strong>online presence</strong>. Consumers are increasingly going online using their mobile phones to view menus, check prices, read and submit reviews and seek local, non-chain establishments to spend their hard earned money. However, the change in that consumer behaviour has left locally owned, small and medium business out of the mobile and online equation. And we are here to help.<a class="btn" data-toggle="modal" href="#myModal" >Launch Modal</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slice color2" id="services" du-scroll-container ng-style={{homeExpansionSmaller}}>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 titleSection hideme2">
+            <span id="servicesTitle">services</span>
+          </div>
+          <div class="col-xs-12">
+            <iframe class="" name="hiddenFrame" width="0" height="0" border="0" style="display: none;"></iframe>
+            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 hideme2" id="servicesPar">
+              Pride is taken in every project and <strong><span class="emphBlue">dave</span></strong> won't be satisfied until you are. Every website is coded uses the latest in web development frameworks to ensure the best possible user experience and site loading times.
+              <div id="servicesSubSection">
+                <div id="servicesSubTitle">essential web design package</div>
+                <div id="servicesPrice">
+                  <span id="servicesPrice3">early adopter special:</span> <strong>$xxxxx</strong>
+                  <div id="servicesPrice2">(regular $xxxxxx)</div>
+                </div>
+                <div class="servicesSubBody">
+                  The essential web design package provides you with everything you need to get your website up and running.<br/>
+                  <div class="servicesSubBody">
+                    <table class="table table-sm">
+                      <tbody>
+                      <tr>
+                        <td>
+                          <span data-toggle="collapse" data-target="#collapseCustom" aria-expanded="false" aria-controls="collapseCustom" class="collapseItem" ng-click="changeChevron('#CustomGlyphicon')">
+                            <span class="glyphicon glyphicon-plus-sign" id="CustomGlyphicon" aria-hidden="true"></span>
+                            &nbsp;Custom-coded designs
+                          </span><br/>
+                          <div class="collapse" id="collapseCustom">
+                            <div class="well">
+                              Your business is unique, so why shouldn't your website be? Every website is custom-coded and designed; <strong><span class="emphBlue">dave</span></strong> won't just stick your images and content into a template and call it a day.
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span data-toggle="collapse" data-target="#collapseResponsive" aria-expanded="false" aria-controls="collapseResponsive" class="collapseItem" ng-click="changeChevron('#ResponseGlyphicon')">
+                            <span class="glyphicon glyphicon-plus-sign" id="ResponseGlyphicon" aria-hidden="true"></span>
+                            &nbsp;Responsive
+                          </span><br/>
+                          <div class="collapse" id="collapseResponsive">
+                            <div class="well">
+                              Consumers are accessing websites on a growing variety of devices and screen sizes and it's critical that your website is optimized for every experience. While <strong><span class="emphBlue">dave</span></strong> takes a mobile-first approach to design, he will ensure that your customers have an amazing experience regardless of device.
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span data-toggle="collapse" data-target="#collapseKISS" aria-expanded="false" aria-controls="collapseKISS" class="collapseItem" ng-click="changeChevron('#KISSGlyphicon')">
+                            <span class="glyphicon glyphicon-plus-sign" id="KISSGlyphicon" aria-hidden="true"></span>
+                            &nbsp;Keep it simple - up to 3 pages
+                          </span><br/>
+                          <div class="collapse" id="collapseKISS">
+                            <div class="well">
+                              To ensure a positive user experience, all designs strive to be as minimalist as possible; up to 3 pages are included in this package. A fee of $100 applies for each additional page. 
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span data-toggle="collapse" data-target="#collapseOptimize" aria-expanded="false" aria-controls="collapseOptimize" class="collapseItem" ng-click="changeChevron('#OptimizeGlyphicon')">
+                            <span class="glyphicon glyphicon-plus-sign" id="OptimizeGlyphicon" aria-hidden="true"></span>
+                            &nbsp;Google optimization
+                          </span><br/>
+                          <div class="collapse" id="collapseOptimize">
+                            <div class="well">
+                              With mobile now the preferred method for accessing websites, ensuring your website loads quickly is critical and impacts your searchability on Google. All code and images will be optimized to ensure it complies with Google's optimization requirements. 
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span data-toggle="collapse" data-target="#collapseAODA" aria-expanded="false" aria-controls="collapseAODA" class="collapseItem" ng-click="changeChevron('#AODAGlyphicon')">
+                              <span class="glyphicon glyphicon-plus-sign" id="AODAGlyphicon" aria-hidden="true"></span>
+                              &nbsp;AODA Compliance
+                            </span><br/>
+                            <div class="collapse" id="collapseAODA">
+                              <div class="well">
+                                As per the Accessibility for Ontarians with Disablities Act, websites for Ontario businesses must conform to accessibility standards by January 1, 2020. Some businesses may be excluded from this legislation, but it's important for your business to ensure that these basic standards are met. 
+                              </div>
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span data-toggle="collapse" data-target="#collapseManage" aria-expanded="false" aria-controls="collapseManage" class="collapseItem" ng-click="changeChevron('#ContentGlyphicon')">
+                            <span class="glyphicon glyphicon-plus-sign" id="ContentGlyphicon" aria-hidden="true"></span>
+                            &nbsp;Manage your own content
+                          </span><br/>
+                          <div class="collapse" id="collapseManage">
+                            <div class="well">
+                              Do you need to update your details or modify some text on your website? All sites are setup to enable you to modify content whenever you need using a content management system.  
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span data-toggle="collapse" data-target="#collapsePhoto" aria-expanded="false" aria-controls="collapsePhoto" class="collapseItem" ng-click="changeChevron('#PhotoGlyphicon')">
+                            <span class="glyphicon glyphicon-plus-sign" id="PhotoGlyphicon" aria-hidden="true"></span>
+                            &nbsp;Photo sourcing
+                          </span><br/>
+                          <div class="collapse" id="collapsePhoto">
+                            <div class="well">
+                              <strong><span class="emphBlue">dave</span></strong> will scour the web for stock photos that suit your website. If there is a cost to purchase the photo then that will be passed on to you without any additional charge. Of course, all options will be reviewed with you prior to pulling the trigger!<br/>
+                              If you want to go the extra step and to hire a professional photographer for a custom photoshoot, dave can do the legwork for that too! 
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span data-toggle="collapse" data-target="#collapseHTTPS" aria-expanded="false" aria-controls="collapseHTTPS" class="collapseItem" ng-click="changeChevron('#HTTPSGlyphicon')">
+                            <span class="glyphicon glyphicon-plus-sign" id="HTTPSGlyphicon" aria-hidden="true"></span>
+                            &nbsp;HTTPS secure certificate*
+                          </span><br/>
+                          <div class="collapse" id="collapseHTTPS">
+                            <div class="well">
+                              Every website comes standard with a secure certificate installed that prevents malicious bots or users from injecting virus-laden code or ads into your website.<br/>
+                              *conditional on your web hosting service permitting the use of third-party certificates.
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr><td></td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div id="servicesSubSection">
+                <div id="servicesSubTitle">monthly plus</div>
+                <div id="servicesPrice">
+                  <span id="servicesPrice3"><strong>$xxxxx/month</strong></span>
+                </div>
+                <div class="servicesSubBody">
+                  Let <strong><span class="emphBlue">dave</span></strong> crunch the numbers and ensure third-party websites are providing accurate information of your business to consumers. This monthly package will provide you with detailed reports to help you understand how your business is perceived online and how your website is performing. There is a minimum subscription of 3 months for this service.
+                  <br/>
+                  <div class="servicesSubBody">
+                    <table class="table">
+                      <tr>
+                        <td>
+                          <span data-toggle="collapse" data-target="#collapseGA" aria-expanded="false" aria-controls="collapseGA" class="collapseItem" ng-click="changeChevron('#GAGlyphicon')">
+                            <span class="glyphicon glyphicon-plus-sign" id="GAGlyphicon" aria-hidden="true"></span>
+                            &nbsp;Google analytics setup
+                          </span><br/>
+                          <div class="collapse" id="collapseGA">
+                            <div class="well">
+                              <strong><span class="emphBlue">dave</span></strong> will setup Google analytics tracking on your website to enable reporting that allows you to track users and learn more about your customer base. This is a one-time setup.
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span data-toggle="collapse" data-target="#collapseAnalytics" aria-expanded="false" aria-controls="collapseAnalytics" class="collapseItem" ng-click="changeChevron('#AnalyticsGlyphicon')">
+                            <span class="glyphicon glyphicon-plus-sign" id="AnalyticsGlyphicon" aria-hidden="true"></span>
+                            &nbsp;Monthly Google analytics report
+                          </span><br/>
+                          <div class="collapse" id="collapseAnalytics">
+                            <div class="well">
+                              This summary will provide you with details on traffic trends; how are people finding your site, are you attracting new users, how long are people staying on your site? If you're spending money to market online, how well is it performing? Keep tabs on the demographics of your users along - what age group do they fall into? what are their interests? This information is critical in understanding your audience and allow you to cater to them.
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span data-toggle="collapse" data-target="#collapseThirdRpt" aria-expanded="false" aria-controls="collapseThirdRpt" class="collapseItem" ng-click="changeChevron('#AuditGlyphicon')">
+                            <span class="glyphicon glyphicon-plus-sign" id="AuditGlyphicon" aria-hidden="true"></span>
+                            &nbsp;Monthly report of third-party reviews
+                          </span><br/>
+                          <div class="collapse" id="collapseThirdRpt">
+                            <div class="well">
+                              Keep tabs on how well your business is received on third-party websites, such as Google, Yelp, etc. This report will include all new reviews for the month as well as a month-to-month trend of your overall scores. Potential new customers are increasingly seeking online reviews
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span data-toggle="collapse" data-target="#collapseAudit" aria-expanded="false" aria-controls="collapseAudit" class="collapseItem" ng-click="changeChevron('#AuditGlyphicon')">
+                            <span class="glyphicon glyphicon-plus-sign" id="AuditGlyphicon" aria-hidden="true"></span>
+                            &nbsp;Monthly audit of third-party data 
+                          </span><br/>
+                          <div class="collapse" id="collapseAudit">
+                            <div class="well">
+                              Since information on third-party websites, such as Yelp, is user-generated it is not uncommon for your businesses information to be incorrect and therefore mislead customers. <strong><span class="emphBlue">dave</span></strong> will conduct a monthly audit of popular third-party websites to ensure accuracy and report the results back to you.
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr><td></td></tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slice" id="portfolio" du-scroll-container ng-style={{homeExpansion}}>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 titleSection hideme">
+            <span id="portfolioTitle">portfolio</span>
+          </div>
+          <div class="col-xs-12">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 hideme" id="portfolioPar">
+            Below you'll find a sample of the work completed by <strong><span class="emphBlue">dave</span></strong>, including this website itself!
+            </div>
+          </div>
+          <div class="col-xs-12 hidden-xs visible-sm visible-md visible-lg hideme" style="margin-top: 50px; ">
+            <table id="portfolioDesc1" style="width: 75%; margin: 0 auto">
+              <tr>
+                <td colspan="2" id="tableTitle"><a href="http://www.thebarwithnoname.ca"><img class="hvr-forward" src="images/bwnn/logo_big.png" style="max-width: 400px" alt="the bar with no name .ca logo"></a></td>
+              </tr>
+              <tr>
+                <td style="width: 170px"><a href="http://www.thebarwithnoname.ca"><img src="images/bwnn/bwnn.png" style="max-height: 150px; padding: 10px 10px 10px 10px" alt="screenshot of the bar with no name .ca website"></a></td>
+                <td>This very light-weight, unique and minimalist design was inspired by Pat's approach to The Bar With No Name. The Bar With No Name has had a successful 8 years of providing a very laid-back, welcoming atmosphere serving local craft beer and high-quality homemade food and this design reflects that.</td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xs-12 visible-xs hidden-sm hidden-md hidden-lg hideme" style="margin-top: 50px; ">
+            <table id="portfolioDesc1" style="width: 75%; margin: 0 auto">
+              <tr>
+                <td id="tableTitle"><a href="http://www.thebarwithnoname.ca"><img class="hvr-forward" src="images/bwnn/logo_big.png" style="max-width: 100%" alt="the bar with no name .ca logo"></a></td>
+              </tr>
+              <tr>
+                <td id="portfolioDesc1Par">This very light-weight, unique and minimalist design was inspired by Pat's approach to The Bar With No Name. The Bar With No Name has had a successful 8 years of providing a very laid-back, welcoming atmostphere serving local craft beer and high-quality homemade food and this design reflects that.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slice color2" id="about" du-scroll-container ng-style={{homeExpansionSmaller}}>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 titleSection hideme">
+            <span class="noSubtitle aboutSection" id="aboutTitle">about</span>
+          </div>
+          <!-- Visible ONLY for non-mobile devices -->
+          <div class="col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-2 hidden-xs visible-sm visible-md visible-lg hideme" id="aboutPic">
+            <img src="images/daver.jpg" id="daverPic" ng-style={{aboutPicPadding}} alt="dave hamilton's photo"/>
+          </div>
+          <div class="col-sm-5 col-md-4 hidden-xs visible-sm visible-md visible-lg hideme" id="aboutPar" ng-style={{aboutParPadding}}>
+             With over 10 years programming experience developing applications to automate boring corporate reporting systems and processes, <span style="color: #000080"><strong>dave hamilton</strong></span> has transitioned to the exciting and always-dynamic world of web development and design! His broad experience with programming, report development and report visualization provides him with a well-rounded foundation to provide you with a unique and thoughtful approach to your website.
+          </div>
+          <!-- Visible ONLY for mobile xs devices -->
+          <div class="col-xs-12 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-2 visible-xs hidden-sm hideme" id="aboutPic">
+            <img src="images/daver.jpg" id="daverPic" ng-style={{aboutPicPadding}} alt="dave hamilton's photo"/>
+          </div>
+          <div class="col-xs-12 visible-xs hidden-sm hideme">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 visible-xs hidden-sm hideme" id="aboutPar">
+               With over 10 years programming experience developing applications to automate boring corporate reporting systems and processes, <span style="color: #000080"><strong>dave hamilton</strong></span> has transitioned to the exciting and always-dynamic world of web development and design! His broad experience with programming, report development and report visualization provides him with a well-rounded foundation to provide you with a unique and thoughtful approach to the development of your website.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slice color1" id="contact" du-scroll-container ng-style={{homeExpansionSmaller}}>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 titleSection">
+            <span id="contactTitle">contact</span>
+          </div>
+          <div class="col-xs-12">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3" id="contactPar">
+              <div class="textCenter" id="contactText">Use the form below to send <strong><span class="emphBlue">daver</span></strong> a message.</div>
+
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+              <form method="POST" name="contactForm" action="process.php" ng-submit="sendContact()" target="hiddenFrame" novalidate> 
+              <!--novalidate turns off HTML5 validation -->
+              <p>
+                <div class="form-group" ng-class="{ 'has-error has-feedback' : contactForm.name.$invalid && !contactForm.name.$pristine }"> 
+                  <label for='name'>Name*</label>
+                  <input class="form-control" id="focusedInput" type="text" name="name" ng-model="contact.name" required>
+                  <span ng-show="contactForm.name.$error.required && !contactForm.name.$pristine" class="help-block">Your name is required.</span>
+                </div>
+              </p>
+              <p>
+                <div class="form-group" ng-class="{ 'has-error has-feedback' : contactForm.email.$invalid && !contactForm.email.$pristine }"> 
+                  <label for='email'>Email*</label>
+                  <input class="glowingBorder form-control" type="text" name="email" ng-model="contact.email" required>
+                  <span ng-show="contactForm.email.$error.required && !contactForm.email.$pristine" class="help-block">Your email is required.</span>
+                </div>
+              </p>
+              <!-- In case I want to include Phone Number...
+              <p>
+                <div class="form-group phone-number"> 
+                  <label for="phone" class="control-label">Phone</label>
+                  <br/>
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <input type="tel" class="form-control" id="phoneArea" size="3" maxlength="3" name="phoneArea" ng-model="contact.phoneArea">
+                    </div>
+                    <div class="col-xs-3">
+                      <input type="tel" class="form-control" id="phoneFirst" size="3" maxlength="3" name="phoneFirst" ng-model="contact.phoneFirst">
+                    </div>
+                    <div class="col-xs-4">
+                      <input type="tel" class="form-control" id="phoneSecond" size="4" maxlength="4" name="phoneSecond" ng-model="contact.phoneSecond">
+                    </div>
+                  </div>
+                </div>-->
+                <p>
+                  <label for='email'>Current Website</label> <br>
+                  <input class="glowingBorder form-control" type="text" name="website">
+                </p>
+                <p>
+                <label for='message'>Tell me a little about your website needs*</label> <br>
+                <textarea class="glowingBorder form-control" name="message" ng-model="contact.message" required></textarea>
+                </p>
+                <button type="submit" class="btn btn-primary" ng-disabled="contactForm.$invalid">Submit</button>
+              </form>
+              <iframe name="hiddenFrame" width="0" height="0" border="0" style="display: none;"></iframe>
+              <div ng-show="testSuccess" id="messageConfirm">Your message was successfully sent!</div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="row-footer">
+        <div class="container">
+          <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-1" style="padding-top: 45px">
+              Copyright © 2017 Dave Hamilton.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <div class="modal fade" id="myModal">
+  <div class="modal-header">
+    <a class="close" data-dismiss="modal">×</a>
+    <h3>Modal header</h3>
+  </div>
+  <div class="modal-body">
+    <p>One fine body…</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn">Close</a>
+    <a href="#" class="btn btn-primary">Save changes</a>
+  </div>
+</div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script> 
+
+<!-- build:js scripts/main.js  -->
+  <script src="../node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="../node_modules/angular-sanitize/angular-sanitize.min.js"></script>
+  <script src="../node_modules/angular-animate/angular-animate.min.js"></script>
+  <script src="../node_modules/angular-touch/angular-touch.min.js"></script>
+  <script src="../node_modules/angular-resource/angular-resource.min.js"></script>
+  <!--https://github.com/oblador/angular-scroll-->
+  <script src="../node_modules/angular-scroll/angular-scroll.min.js"></script>
+  <script src="scripts/controllers.js"></script>
+<!-- endbuild -->
+
+
+</body>
+</html>
